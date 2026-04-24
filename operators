@@ -1,0 +1,62 @@
+'''a=[10,20,30]
+print(10 in a)
+student=['abi','anbu','sri']
+print('anbu' in student)
+print('keerthi' not in student)
+a=10
+b=20
+c=b
+d=20
+print(a==b)
+print(c==d)
+print(c is d)
+a="hari"
+b="hari"
+print(a is b)'''
+a=[10,20,30]
+b=[10,20,30]
+print(a==b)
+print(a is b)
+#logical operators and , or ,not
+'''a=5
+b=10
+print(a>b and a<b)# f t =>f
+print(a>b and a==b)# f f=>f
+print(a<b and a==b)#t f=>f
+print(a!=b and a<b)# t t=> t
+print(a>b or a<b)# f t =>t
+print(a>b or a==b)# f f=>f
+print(a<b or a==b)#t f=>t
+print(a!=b or a<b)# t t=>t=>f
+print(not(a==b))
+print(not(a!=b or a<b))# t t=>t
+'''
+#comparision or relational opera
+'''a=20
+b=10
+print(a>b)
+print(a<b)
+print(a==b)
+print(a!=b)
+print(a<=b)
+print(a>=b)'''
+
+
+#assignment operators
+
+'''x=10
+print(x)
+#x=x+5
+x+=5
+print(x)
+x-=5
+print(x)
+x*=5
+print(x)
+x/=4
+print(x)
+x//=5
+print(x)
+x=20
+x%=5
+print(x)'''
