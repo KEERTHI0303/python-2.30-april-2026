@@ -1,0 +1,34 @@
+'''a=1
+if(a==10):
+    print('a is 10')
+else:
+    print('a is not equal to 10')
+
+
+eshwar_plan=str(input("enter your plan"))
+print(eshwar_plan)
+num=int(input("enter the number"))
+print(num)
+salary=float(input("enter the number"))
+print(salary)
+
+eshwar_plan=str(input("enter your plan"))
+print(eshwar_plan)
+if(eshwar_plan=="maths_tution"):
+    print(eshwar_plan,"    6 to 8")
+elif (eshwar_plan=="python class"):
+    print(eshwar_plan,"   2.30 to 4.40")
+elif (eshwar_plan=="physic tution"):
+    print(eshwar_plan,"   6.30 to 8")
+else:
+    print("playing timing")'''
+
+eng=int(input("enter the eng mark"))
+tamil=int(input("enter the tamil mark"))
+social=int(input("enter the soc mark"))
+avg=(eng+tamil+social)/3
+print(avg)
+if(avg>95):
+    print("a grade")
+elif(avg>80):
+    print("b grade")
