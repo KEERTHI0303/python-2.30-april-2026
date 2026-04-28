@@ -1,0 +1,51 @@
+#pass,continue,break
+
+
+
+
+'''num_of_days=int(input("enter the days"))
+if(num_of_days>=1 and num_of_days<6):
+    print(num_of_days*0.40)
+elif(num_of_days>5 and num_of_days<11):
+    print(num_of_days*0.65)
+elif(num_of_days>10):
+    print(num_of_days*0.80)
+else:
+    print("invalid")a
+
+food_type=str(input("enter the food type"))
+
+if food_type=='veg':
+    print(food_type)
+    dish=str(input("enter the food type"))
+    if(dish=="mushroom_biriyani"):
+        print(dish)
+    elif(dish=="curd"):
+        print(dish)
+    elif(dish=="meals"):
+        print(dish)
+    else:
+        print("no more dish")
+elif food_type=='nonveg':
+    print(food_type)
+    dish=str(input("enter the food type"))
+    if(dish=="mutton_biriyani"):
+        print(dish)
+    elif(dish=="fish_fry"):
+        print(dish)
+    elif(dish=="egg"):
+        print(dish)
+    else:
+        print("no more dish")
+'''
+
+
+'''for i in range(1,11,2):
+    print(i)
+'''
+num=int(input("enter the value"))
+for i in range(1,11,1):
+    print(num,"x",i,"=",i*num)
+
+for i in "keerthi":
+    print(i,end="")
