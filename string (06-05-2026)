@@ -1,0 +1,84 @@
+d=str(input("enter the values"))
+print(d)
+count=0
+for i in d:
+    count=count+1
+    if(count==3):
+        print(i)
+        if(i=="a" or i=="o" or i=="i" or i=="e" or i=="u"):
+            print("vowels")
+v=['a','e','i','o','u']
+if i in v:
+    print("vowels")
+
+print(d[::-1])
+
+
+
+
+
+
+
+
+'''a="iamkeerthiMAM1"
+print(a.capitalize())#STARTING WITH CAPITAL LETTER
+print(a.casefold())#CHANGE TO LOWER CASE
+print(a.center(30))#GIVE SPACE TO REMAINING CHAR
+print(a.encode())#CHANGE FORMAT TO BINARY
+print(a.endswith(""))#IN STRING LAST MATCH
+s="livewire\tsalem"
+print(s.expandtabs())
+print(s)
+print(a.count("a"))
+print(a.find("a"))#index
+print(a.index("i"))
+print(a.rindex("i"))
+print(a.isalnum())
+print(a.isalpha())
+print(a.isascii())
+#a="90.345"
+print(a.isdecimal())#ALLOW WHOLE VALUE NOT ALLOW FLOAT
+print(a.isdigit())#ALLOW WHOLE VALUE NOT ALLOW FLOAT
+print(a.isidentifier())#LIKE VAR(SPACE,STARTING WITH NUM,KEYWORDS,SPECIAL CHAR)
+a="iamkeerthiMAM1"
+print(a.islower())
+print(a.isnumeric())
+print(a.isprintable())
+a="  I Am In "
+print(a.isspace())
+print(a.istitle())#every word first letter capital
+print(a.isupper())#check fully is capital
+print(a.join("*--*"))#join tha value infront 
+print(a.lower())#change into fully lower case
+name="priya"
+print(name.lower())
+print(name.upper())
+print(a.ljust(14,"a"))
+print(a.strip("  "))#both side space
+print(a.rstrip(" "))#back space remove
+print(a.lstrip(" "))#front space remove
+print(a.partition("I"))#separate front and back
+print(a.removeprefix("  I"))
+print(a.removesuffix("In "))
+a="i am keerthi"
+print(a.replace("keer","pree"))
+print(a.split(" "))
+print(a.startswith("i"))
+a="Abcd"
+print(a.swapcase())
+a="i am keerthi.\ni am working in livewire.\ni am python trainer"
+print(a.splitlines())
+
+
+
+print(a)
+for i in a:
+    if(i==" "):
+        continue
+    else:
+        print(i,end="")
+print(len(a))
+count=0
+for i in a:
+    count=count+1
+print(count)'''
