@@ -1,0 +1,34 @@
+#to create file
+#a=open("C:\\Users\\Live wire\\Desktop\\eshwar.ppt",'x')
+#print("file created")
+#a=open(r"C:\Users\Live wire\Desktop\eshwar.txt",'w')
+#a.write("hi i am srikavin")
+#a.flush()
+#a.close()
+#print("file writer")
+#a=open(r"C:\Users\Live wire\Desktop\eshwar.txt",'a')
+#a.write("hi i am eshwar")
+#a.flush()
+#a.close()
+#print("file writer")
+a=open(r"C:\Users\Live wire\Desktop\eshwar.txt",'r')
+#print(a.read())
+print(a.readline())
+print(a.readlines())
+import os
+os.remove(r"C:\Users\Live wire\Desktop\eshwar.txt")
+
+
+#'''username=str(input("enter the name"))
+#bill=open(r'C:\Users\Live wire\Desktop\ ' +username+".txt",'x')
+#print(bill)
+#bill=open(r'C:\Users\Live wire\Desktop\ ' +username+".txt",'w')
+#bill.write("-------------xyz shop--------")
+#price=300
+#count=3
+#bill.write("food in data biriyani 2 200rs")
+#bill.write(str(price*count))
+#bill.flush()
+#bill.close()'''
+bill=open(r'C:\Users\Live wire\Desktop\ wer.txt','r')
+print(bill.read())
