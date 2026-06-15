@@ -1,0 +1,88 @@
+class aakash:
+    def py(self):
+        print("ak python")
+class madhan(aakash):
+    def py(self):
+        print("maddy python")
+        super().py()
+obj=madhan()
+obj.py()
+
+'''class cal:
+    def add(self,a,b=None,c=None,d=None):
+        if (a!=None and b!=None and c!=None and d!=None):
+            print(a+b+c+d)
+        if (a!=None and b!=None and c!=None):
+            print(a+b+c)
+        elif (a!=None and b!=None):
+            print(a+b)
+        elif (a!=None):
+            print(a)
+            
+        
+obj=cal()
+obj.add(12)
+obj.add(2,4,67)
+'''
+
+'''class abi:
+    def demo(self,name):
+        print("hello",name)
+    def __init__(self,name):
+        print("i am in cons",name)
+    def __del__(self):
+        print("its deleted")
+obj=abi("abi")
+del obj
+obj.demo("hari")
+
+class  fa_grandpa:
+	def fun(self):
+		print("this is grandpa class")
+class  mo_grandpa :
+	def fun1(self):
+		print("this is parent class")
+class parent(fa_grandpa,mo_grandpa):
+	def fun2(self):
+		print("this is child1 class")
+class child(parent):
+	def fun3(self):
+		print("this is child2 class")
+obj=child()
+obj.fun()
+obj.fun1()
+obj.fun2()
+obj.fun3()
+
+
+
+class web:
+    def web_course(self):
+        print("web theory")
+class java(web):
+    def java_course(self):
+        print("java full stack theory")
+class python(web):
+    def python_course(self):
+        print("python full stack theory")
+obj=python()
+obj.python_course()
+obj.web_course()
+obj=java()
+obj.java_course()
+class red:
+    def red_color(self):
+        self.total=90
+        print("red color")
+class white:
+    def white_color(self):
+        self.sold=14
+        print("white color")
+class pink(red,white):
+    def red_white(self):
+        print(self.total-self.sold)
+        print("red + white = pink")
+obj=pink()
+obj.red_color()
+obj.white_color()
+obj.red_white()'''
