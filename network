@@ -1,0 +1,32 @@
+server
+import socket as d
+s1=d.socket()
+host=d.gethostname()
+port=12345
+s1.bind((host,port))
+print("server is connected")
+s1.listen(5)
+while True:
+    s,c=s1.accept()
+    print("got a connection from ",c)
+    s.send("hi....client good morning".encode("utf-16"))
+    #text2=""
+    if s.recv(1024).decode("utf-16")!="stop":
+        print(s.recv(1024).decode("utf-16"))
+        text1=input("enter")
+        s.send(text1.encode("utf-16"))
+        s.close()
+    
+
+client
+import socket as d
+s=d.socket()
+host=d.gethostname()
+port=12345
+s.connect((host,port))
+print("got a connection from ",s)
+#if(s.recv(1024).decode("utf-16")!="stop"):
+print(s.recv(1024).decode("utf-16"))
+text2=input("enter")
+s.send(text2.encode("utf-16"))
+s.close()
