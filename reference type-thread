@@ -1,0 +1,78 @@
+import threading as t
+def background(w):
+    print("different images")
+    for i in range(1,11):
+        print(i)
+def person(e):
+    print("person images")
+    for i in range(65,75):
+        print(chr(i),"hello")
+t1=t.Thread(target=background,args=(1,))
+t1.start()
+t1.join()
+t2=t.Thread(target=person,args=(2,))
+t2.start()
+
+'''#decorator
+def cap(text):
+    return text.upper()
+def low(text):
+    return text.title()
+def greet(func):
+    greeting = func("Hi, I am created by a function passed as an argument.")
+    print (greeting)
+
+greet(cap)
+greet(low)
+
+def bubble(a):
+    return a,"photo+bubble"
+def edit(tepm):
+    image=tepm("edit photo")
+    print(image)
+edit(bubble)'''
+'''#closure
+def outer_fun(a):
+    def inner_fun(b):
+        return a+b
+    return inner_fun
+f=outer_fun(2)
+print(f(5))
+def button(database):
+    def page_redirection():
+        return "page redirection",database
+    return page_redirection
+sumbit=button("form")
+print(sumbit())
+
+generator
+def demo():
+    for i in range(1,6):
+        return i# once one value store 
+
+print(demo())
+
+def fun():
+    for i in range(1,6):
+        yield i,"hello"# once one value store 
+
+#print(fun())
+p=fun()
+print(list(p))
+'''
+'''
+iterators
+a=[1,2,3,4,5]
+print(a)
+print(type(a))
+i=iter(a)
+print(i)
+print(type(i))
+print(i.__next__())
+print(i.__next__())
+print(next(i))
+print(next(i))
+print(next(i))
+#print(next(i))
+'''
+
