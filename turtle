@@ -1,0 +1,242 @@
+from turtle import *
+
+# Screen setup
+screen = Screen()
+screen.setup(800, 800)
+bgcolor("white")
+title("Doraemon")
+
+speed(0)
+pensize(3)
+
+def myPosition(x, y):
+    penup()
+    goto(x, y)
+    pendown()
+
+# Blue Head
+def blueHead():
+    myPosition(0, -180)
+    color("black", "#0099ff")
+    begin_fill()
+    circle(180)
+    end_fill()
+
+# White Face
+def whiteFace():
+    myPosition(0, -150)
+    color("black", "white")
+    begin_fill()
+    circle(150)
+    end_fill()
+
+# Draw Part 1
+blueHead()
+whiteFace()
+
+
+# Eyes
+def eyes():
+    # Left Eye
+    myPosition(-35, 80)
+    color("black", "white")
+    begin_fill()
+    setheading(0)
+    circle(25)
+    end_fill()
+
+    # Right Eye
+    myPosition(35, 80)
+    begin_fill()
+    circle(25)
+    end_fill()
+
+    # Left Pupil
+    myPosition(-25, 90)
+    color("black", "black")
+    begin_fill()
+    circle(6)
+    end_fill()
+
+    # Right Pupil
+    myPosition(25, 90)
+    begin_fill()
+    circle(6)
+    end_fill()
+
+# Nose
+def nose():
+    myPosition(0, 45)
+    color("black", "red")
+    begin_fill()
+    circle(12)
+    end_fill()
+
+# Nose Line
+def noseLine():
+    myPosition(0, 45)
+    color("black")
+    setheading(270)
+    forward(70)
+
+# Mouth
+def mouth():
+    myPosition(-60, -25)
+    setheading(-60)
+    circle(70, 120)
+
+# Whiskers
+def whiskers():
+    # Left
+    myPosition(-30, 20)
+    setheading(180)
+    forward(70)
+
+    myPosition(-30, 0)
+    setheading(170)
+    forward(70)
+
+    myPosition(-30, -20)
+    setheading(160)
+    forward(70)
+
+    # Right
+    myPosition(30, 20)
+    setheading(0)
+    forward(70)
+
+    myPosition(30, 0)
+    setheading(10)
+    forward(70)
+
+    myPosition(30, -20)
+    setheading(20)
+    forward(70)
+
+# Draw Face
+eyes()
+nose()
+noseLine()
+mouth()
+whiskers()
+# Collar
+def collar():
+    myPosition(-90, -110)
+    color("black", "red")
+    pensize(3)
+
+    begin_fill()
+    setheading(0)
+    forward(180)
+    right(90)
+    forward(20)
+    right(90)
+    forward(180)
+    right(90)
+    forward(20)
+    end_fill()
+
+# Bell
+def bell():
+    myPosition(0, -155)
+    color("black", "yellow")
+    begin_fill()
+    circle(18)
+    end_fill()
+
+    myPosition(-15, -145)
+    setheading(0)
+    forward(30)
+
+    myPosition(0, -155)
+    setheading(270)
+    forward(15)
+
+# Body
+def body():
+    myPosition(-100, -320)
+    color("black", "#0099ff")
+    begin_fill()
+
+    setheading(0)
+    forward(200)
+    left(90)
+    forward(170)
+    left(90)
+    forward(200)
+    left(90)
+    forward(170)
+
+    end_fill()
+
+# Pocket
+def pocket():
+    myPosition(0, -250)
+    color("black", "white")
+    begin_fill()
+    circle(55)
+    end_fill()
+
+# Left Hand
+def leftHand():
+    myPosition(-100, -180)
+    pensize(18)
+    setheading(180)
+    forward(70)
+
+    myPosition(-180, -190)
+    color("black", "white")
+    begin_fill()
+    circle(18)
+    end_fill()
+
+# Right Hand
+def rightHand():
+    myPosition(100, -180)
+    pensize(18)
+    setheading(0)
+    forward(70)
+
+    myPosition(170, -190)
+    color("black", "white")
+    begin_fill()
+    circle(18)
+    end_fill()
+
+# Legs
+def legs():
+    pensize(3)
+
+    myPosition(-40, -320)
+    setheading(270)
+    forward(60)
+
+    myPosition(40, -320)
+    setheading(270)
+    forward(60)
+
+# Feet
+def feet():
+    myPosition(-70, -395)
+    color("black", "white")
+    begin_fill()
+    circle(30)
+    end_fill()
+
+    myPosition(70, -395)
+    begin_fill()
+    circle(30)
+    end_fill()
+
+# Draw Remaining Parts
+collar()
+bell()
+body()
+pocket()
+leftHand()
+rightHand()
+legs()
+feet()
+
+hideturtle()
+done()
