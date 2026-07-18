@@ -1,0 +1,217 @@
+a="i am python developer"
+print(a)
+print(a[3])
+print(a[5:11])
+print(a[0:11:2])
+print(a[-7:-1])
+print(a[::-1])
+
+
+'''
+def POWER(i):
+    return i * i
+
+x = map(POWER, (1, 2, 3,4,5))
+
+print (x)
+
+print(list(x))
+
+def fun(variable):
+    letters = ['a', 'e', 'i', 'o', 'u']
+    if (variable in letters):
+        return False
+    else:
+        return True
+filtered = filter(fun, ['t', 'h', 'a', 'v','a','n','e','s','h'])
+for s in filtered:
+    print(s)
+
+import sys
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+app = QApplication(sys.argv)
+w = QWidget()
+b = QLabel(w)
+w.setGeometry(1000,50,500,500)
+b.setText("Hi This is Koki!")
+b.move(0,20)
+w.setWindowTitle("abcd")
+w.show()
+sys.exit(app.exec_())
+
+import requests
+from bs4 import BeautifulSoup
+
+URL="https://youtu.be/QjG7i_9ra5k?si=uRl21uCBrPIBACyN"
+x=requests.get(URL)
+
+y=BeautifulSoup(x.content,"html.parser")
+print(y.prettify)
+
+t=y.title
+
+print(t.get_text())
+'''from PIL import Image,ImageFilter
+image1=Image.open(r"C:\Users\paran\Downloads\_- visual selection.png")
+image1.show()
+rotate=image1.rotate(45)
+
+rotate.show()
+blur_Image=image1.filter(ImageFilter.BLUR)
+blur_Image.show()
+image2=image1.transpose(Image.FLIP_LEFT_RIGHT)
+
+image3=image1.transpose(Image.FLIP_LEFT_RIGHT)
+
+image1.show()
+image2.show()
+
+'''
+from PIL import Image,ImageFilter
+image1=Image.open(‪'C:\\Users\\paran\\Downloads\\1000287559.jpg')
+image1.show()
+rotate=image1.rotate(45)
+rotate.show()
+blur_Image=image1.filter(ImageFilter.BLUR)
+
+blur_Image.show()
+image2=image1.transpose(Image.FLIP_LEFT_RIGHT)
+
+image3=image1.transpose(Image.FLIP_LEFT_RIGHT)
+
+image1.show()
+image2.show()
+
+'''import queue as q
+a=dir(q)
+print(a)
+qu=q.Queue()
+o=q.Queue(maxsize=5) #create a queue object and fix the size
+o.put(2)
+o.put(4)
+o.put(6)
+o.put(8)
+o.put(10)
+print(o.get())
+print(o.get())
+print(o.get())
+print(o.get())
+print(o.get())
+
+print(o)
+import pywhatkit
+pywhatkit.search("orange")
+pywhatkit.take_screenshot()
+pwk.sendwhats_image("Name", "Media/images.png")
+pwk.sendwhatmsg("+911234567890", "Hi, how are you?")
+pwk.sendwhatmsg_to_group("Group_Name", "Hey Guys! How's everybody?", 11, 0)
+pywhatkit.playonyt("hello")  
+
+import datetime as d
+print(d.date.today())
+#print(d.date.ctime())
+x = d.datetime.now()
+
+print(x)
+
+print(x.year)#2024
+
+print(x.strftime("%A"))#Sunday
+
+print(x.strftime("%B"))#june
+
+d = d.date(2024, 12, 25)
+
+print(d)
+
+from datetime import date,time
+
+today = date.today() 
+
+print("Current year:", today.year)
+
+print("Current month:", today.month)
+
+print("Current day:", today.day)
+
+d = time(11, 34, 56, 234566)
+
+print(d)
+'''
+'''import time
+
+print(time.ctime())#Fri Sep  1 11:21:41 2023
+time.sleep(5)
+
+curr = time.time()
+
+print("Current time in seconds since epoch =", curr)
+
+obj = time.gmtime(curr)
+
+time_str = time.asctime(obj)
+
+print(time_str)
+
+
+import calendar as c
+
+print(c.month(2039,4))
+
+print(c.isleap(2024))
+
+print(c.calendar(2024))
+
+obj = c.Calendar()
+print((obj))
+# iterating with itermonthdates
+
+for day1 in obj.itermonthdates(2024, 2):
+    print(day1)
+
+
+    
+
+'''
+
+
+
+
+
+
+'''import random as r
+print(r.random())
+
+print(r.randint(1000,9999))
+
+print(r.randrange(0,102,4))
+a=[23,12,45,67,89]
+
+#a=['a','b','C']
+print(r.choice(a))
+
+b=[1,2,3,3,5]
+
+r.shuffle(b)
+print(b)
+print(r.random())
+state = r.getstate()#print another random number:
+
+print(r.random())#restore the state:
+
+r.setstate(state)
+print(r.random())
+
+print(r.triangular(20, 60, 30))
+
+print(r.seed(1))
+
+print(r)
+print(r.random())
+
+print(r.random())
+
+help('modules')'''
+
